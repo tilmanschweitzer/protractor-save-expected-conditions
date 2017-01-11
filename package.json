@@ -1,0 +1,17 @@
+{
+  "name": "race-condition-in-expected-condition-visibility-of",
+  "version": "1.0.0",
+  "description": "Tests to reproduce a race condition in ExpectedConditions.visibilityOf, when element is removed between isPresent and isDisplayed",
+  "scripts": {
+    "test": "protractor protractorConfig.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tilmanpotthof/race-condition-in-expected-condition-visibility-of.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "protractor": "^4.0.14"
+  }
+}
