@@ -2,13 +2,9 @@
 exports.config = {
 	baseUrl: 'http://localhost:8090/',
 	capabilities: {
-		browserName: 'chrome',
-		chromeOptions: {
-			args: [ 'lang=en-EN', '--window-size=1280,960'],
-			prefs: {
-				intl: { accept_languages: "en-EN" }
-			}
-		}
+		browserName: 'phantomjs',
+		'phantomjs.binary.path': require('phantomjs-prebuilt').path,
+		'phantomjs.ghostdriver.cli.args': ['--loglevel=DEBUG']
 	},
 	framework: 'jasmine',
 	seleniumAddress: 'http://localhost:4444/wd/hub',
