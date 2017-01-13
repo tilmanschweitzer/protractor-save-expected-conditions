@@ -50,7 +50,7 @@ describe('visibilityOf race condition', function() {
 		/*
 		 * Comment out this line to reproduce the original race condition error
 		 */
-		// EC.visibilityOf = require('../src/saveVisibilityOf');
+		EC.visibilityOf = require('../src/saveVisibilityOf');
 
 		it('returns true is element is present', function () {
 			var raceConditionElement = EC.visibilityOf(RACE_CONDITION_ELEMENT);

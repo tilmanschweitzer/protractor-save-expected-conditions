@@ -50,7 +50,7 @@ describe('textToBePresentInElement race condition', function() {
 		/*
 		 * Comment out this line to reproduce the original race condition error
 		 */
-		// EC.textToBePresentInElement = require('../src/saveTextToBePresentinElement');
+		EC.textToBePresentInElement = require('../src/saveTextToBePresentinElement');
 
 		it('returns false when element is removed between isPresent and getText', function () {
 			testHelper.prepareInterceptorToRemoveElementBeforeCall(RACE_CONDITION_ELEMENT, RACE_CONDITION_ELEMENT_ID, 'getText');
